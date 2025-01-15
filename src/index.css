@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-dotted-pattern {
+    background-image: radial-gradient(circle, #00000040 1px, transparent 1px);
+    background-size: 20px 20px;
+    /* Ajuste o tamanho do padrão aqui */
+}
