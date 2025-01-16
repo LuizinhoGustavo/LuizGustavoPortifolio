@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { House, SquareUser, FolderKanban, FileJson2, BriefcaseBusiness, PanelRightOpen, PanelRightClose } from 'lucide-react'
 
 export function SideBar() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const toggleSidebar = () => {
         setIsOpen(prevState => !prevState);
