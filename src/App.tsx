@@ -6,6 +6,8 @@ import { ReactTyped } from "react-typed";
 import { AboutMe } from "./Components/AboutMe/AboutMe";
 import { Project } from "./Components/Project/Project";
 
+import FilePic from '../src/assets/pictures/filePIc.png'
+
 export function App() {
   return (
     <div className="flex flex-row bg-dotted-pattern justify-center">
@@ -35,10 +37,17 @@ export function App() {
           <AboutMe />
 
           <Title content="Projetos" color="#6A80B950" size="52" />
-          <Project />
+
+          {/* Projetos */}
+          <div className="mx-3 grid gap-10 grid-cols-1 lg:grid-cols-2">
+            <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
+          </div>
+
+          <Title content="Tecnologias" color="#B96A6B50" size="52" />
+
+
         </div>
       </div>
     </div>
-
   )
 }
