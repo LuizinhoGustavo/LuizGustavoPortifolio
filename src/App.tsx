@@ -1,4 +1,4 @@
-import { FileUser, Github, Linkedin } from "lucide-react";
+import { Computer, FileUser, Github, Linkedin } from "lucide-react";
 import { SideBar } from "./Components/SideBar/SideBar";
 import { Title } from "./Components/Title/Title"
 import "./index.css"
@@ -37,13 +37,10 @@ export function App() {
 
           <AboutMe />
 
-          <Title content="Projetos" color="#6A80B950" size="52" />
+          <Title content="Projetos" color="#6A80B950" size="44" />
 
           {/* Projetos */}
           <div className="mx-3 grid gap-10 grid-cols-1 lg:grid-cols-2 mb-32">
-            <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
-            <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
-            <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
             <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
           </div>
 
@@ -51,7 +48,20 @@ export function App() {
 
           <Tecnhologies />
 
-          <Title content="Tecnologias" color="#B96A6B50" size="52" />
+          <Title content="O que eu faço" color="#EEFF0050" size="60" />
+
+          <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-32">
+            <div className="bg-[#DB6B6B50] h-72 w-52 border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
+              <Computer />
+              <span className="font-bold text-2xl">programação Web</span>
+            </div>
+            <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg]">
+
+            </div>
+            <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg]">
+
+            </div>
+          </div>
 
 
         </div>
