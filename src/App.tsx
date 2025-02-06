@@ -1,13 +1,14 @@
-import { Computer, FileUser, Github, Linkedin } from "lucide-react";
+import { FileUser, Github, Linkedin } from "lucide-react";
 import { SideBar } from "./Components/SideBar/SideBar";
 import { Title } from "./Components/Title/Title"
 import "./index.css"
 import { ReactTyped } from "react-typed";
 import { AboutMe } from "./Components/AboutMe/AboutMe";
 import { Project } from "./Components/Project/Project";
+import { Tecnhologies } from "./Components/Technologies/Technologies";
 
 import FilePic from '../src/assets/pictures/filePIc.png'
-import { Tecnhologies } from "./Components/Technologies/Technologies";
+import { TimelineElement } from "./Components/TimelineElement/TimelinElement";
 
 export function App() {
   return (
@@ -50,20 +51,26 @@ export function App() {
 
           <Title content="O que eu faço" color="#EEFF0050" size="60" />
 
-          <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-32">
+          <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-16">
             <div className="bg-[#DB6B6B50] h-72 w-52 border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
-              <Computer />
-              <span className="font-bold text-2xl">programação Web</span>
+              <span className="font-bold text-2xl">Programação Web</span>
             </div>
-            <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg]">
-
+            <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
+              <span className="font-bold text-2xl">Pacote office</span>
             </div>
-            <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg]">
-
+            <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
+              <span className="font-bold text-2xl">Power BI</span>
             </div>
           </div>
 
+          <Title content="Experiência" color="#DB4EA350" size="52" />
 
+          <div className="flex flex-col gap-2 w-2/3 h-screen mx-auto">
+            <TimelineElement representation="Earth" title="Inglês Avançado - (C1)" date="2014 - 2024" place="Cultura Inglesa" />
+            <TimelineElement representation="GraduationCap" title="Técnico em Desenvolvimento de Sistemas" date="2021 - 2023" place="ETEC Lauro Gomes" />
+            <TimelineElement representation="LaptopMinimal" title="Bacharel em Ciência e Tecnologia / Ciência da Computação" date="2024 - 2028" place="UFABC" />
+            <TimelineElement representation="GraduationCap" title="Estágio em Desenvolvimento Front-End" date="2024 - Atualmente" place="Prefeitura de Santo André" />
+          </div>
         </div>
       </div>
     </div>

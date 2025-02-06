@@ -4,10 +4,10 @@ interface TitleProps {
     size: string
 }
 
-export function Title(Props: TitleProps) {
+export function Title({ content, color, size }: TitleProps) {
     return (
-        <h2 className={`font-bold text-4xl w-${Props.size} bg-[${Props.color}]`} >
-            {Props.content}
+        <h2 className={`font-bold text-4xl w-${size} bg-[${color}]`} >
+            {content}
         </h2 >
     )
 }

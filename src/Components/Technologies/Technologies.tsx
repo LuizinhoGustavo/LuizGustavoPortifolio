@@ -18,8 +18,8 @@ const Icons = [
 export function Tecnhologies() {
     return (
         <div className="flex flex-row justify-center gap-5 flex-wrap ">
-            {Icons.map((image) => (
-                <TechIcon imageLink={image} />
+            {Icons.map((image, index) => (
+                <TechIcon key={index} imageLink={image} />
             ))}
         </div>
     )
