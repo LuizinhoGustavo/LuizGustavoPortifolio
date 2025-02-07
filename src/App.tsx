@@ -38,7 +38,7 @@ export function App() {
 
           <AboutMe />
 
-          <Title content="Projetos" color="#6A80B950" size="44" />
+          <Title content="Projetos" color="#6A80B950" size="40" />
 
           {/* Projetos */}
           <div className="mx-3 grid gap-10 grid-cols-1 lg:grid-cols-2 mb-32">
@@ -49,17 +49,19 @@ export function App() {
 
           <Tecnhologies />
 
-          <Title content="O que eu faço" color="#EEFF0050" size="60" />
+          <div className="flex flex-col gap-10 w-full py-14">
+            <Title content="O que eu faço" color="#EEFF0050" size="60" />
 
-          <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-16">
-            <div className="bg-[#DB6B6B50] h-72 w-52 border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
-              <span className="font-bold text-2xl">Programação Web</span>
-            </div>
-            <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
-              <span className="font-bold text-2xl">Pacote office</span>
-            </div>
-            <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
-              <span className="font-bold text-2xl">Power BI</span>
+            <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-16">
+              <div className="bg-[#DB6B6B50] h-72 w-52 border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
+                <span className="font-bold text-2xl">Programação Web</span>
+              </div>
+              <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
+                <span className="font-bold text-2xl">Pacote office</span>
+              </div>
+              <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
+                <span className="font-bold text-2xl">Power BI</span>
+              </div>
             </div>
           </div>
 
