@@ -11,6 +11,8 @@ import FilePic from '../src/assets/pictures/filePIc.png'
 import { TimelineElement } from "./Components/TimelineElement/TimelinElement";
 import { RandomText } from "./Components/RandomText/RandomText";
 
+import { i18n } from "./translate/i18n";
+
 export function App() {
   return (
     <div className="flex flex-row bg-dotted-pattern justify-center">
@@ -23,7 +25,7 @@ export function App() {
 
       <div id="home" className="flex flex-col w-full">
         <div className="h-screen flex mx-auto flex-col gap-2 items-center justify-center max-w-[1200px]">
-          <h1 className="font-bold text-2xl md:text-5xl"><ReactTyped strings={['Luiz Gustavo', 'Desenvolvedor Front-end']} typeSpeed={200} backSpeed={30} loop />
+          <h1 className="font-bold text-2xl md:text-5xl"><ReactTyped strings={['Luiz Gustavo', i18n.t('title.dev')]} typeSpeed={200} backSpeed={30} loop />
           </h1>
           <RandomText />
 
@@ -42,44 +44,44 @@ export function App() {
           {/* Projetos */}
           <span id="projects" className=" mb-10 " />
 
-          <Title content="Projetos" color="#6A80B950" size="42" />
+          <Title content={`${i18n.t('subtitles.projects')}`} color="#6A80B950" size="42" />
 
           <div className="mx-3 grid gap-10 grid-cols-1 lg:grid-cols-2 mb-32">
-            <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
+            <Project title={`${i18n.t('projects.randomGutenbergBook.title')}`} description={`${i18n.t('projects.randomGutenbergBook.description')}`} projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
 
           </div>
 
           <span id="technologies" className=" mb-10 " />
 
-          <Title content="Tecnologias" color="#B96A6B50" size="52" />
+          <Title content={`${i18n.t('subtitles.tecnhologies')}`} color="#B96A6B50" size="56" />
 
           <Tecnhologies />
 
           <div className="flex flex-col gap-10 w-full py-14">
-            <Title content="O que eu faço" color="#EEFF0050" size="64" />
+            <Title content={`${i18n.t('subtitles.whatIDo')}`} color="#EEFF0050" size="64" />
 
             <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-16">
               <div className="bg-[#DB6B6B50] h-72 w-52 border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
-                <span className="font-bold text-2xl">Programação Frontend</span>
+                <span className="font-bold text-[1.4rem]">{`${i18n.t('whatIDo.frontend')}`} </span>
               </div>
               <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
-                <span className="font-bold text-2xl">Programação Backend</span>
+                <span className="font-bold text-[1.4rem]">{`${i18n.t('whatIDo.frontend')}`}</span>
               </div>
               <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
-                <span className="font-bold text-2xl">Pacote office e Power BI</span>
+                <span className="font-bold text-[1.4rem]">{`${i18n.t('whatIDo.office')}`}</span>
               </div>
             </div>
           </div>
 
           <span id="experiences" className=" mb-10 " />
 
-          <Title content="Experiência" color="#DB4EA350" size="52" />
+          <Title content={`${i18n.t('subtitles.experience')}`} color="#DB4EA350" size="52" />
 
           <div className="flex flex-col gap-2 w-2/3 pb-32 mx-auto">
-            <TimelineElement representation="Earth" title="Inglês Avançado - (C1)" date="2014 - 2024" place="Cultura Inglesa" />
-            <TimelineElement representation="GraduationCap" title="Curso Técnico em Desenvolvimento de Sistemas" date="2021 - 2023" place="ETEC Lauro Gomes" />
-            <TimelineElement representation="GraduationCap" title="Bacharel em Ciência e Tecnologia / Ciência da Computação" date="2024 - 2028" place="UFABC" />
-            <TimelineElement representation="LaptopMinimal" title="Estágio em Desenvolvimento Front-End" date="2024 - Atualmente" place="Prefeitura de Santo André" />
+            <TimelineElement representation="Earth" title={`${i18n.t('experience.english')}`} date="2014 - 2024" place={`${i18n.t('experience.place.culture')}`} />
+            <TimelineElement representation="GraduationCap" title={`${i18n.t('experience.technicalCourse')}`} date="2021 - 2023" place={`${i18n.t('experience.place.etec')}`} />
+            <TimelineElement representation="GraduationCap" title={`${i18n.t('experience.bachelor')}`} date="2024 - 2028" place={`${i18n.t('experience.place.ufabc')}`} />
+            <TimelineElement representation="LaptopMinimal" title={`${i18n.t('experience.internship')}`} date="2024 - Atualmente" place={`${i18n.t('experience.place.cityHall')}`} />
           </div>
 
 

@@ -1,3 +1,4 @@
+import { i18n } from "../../translate/i18n"
 
 interface ProjectProps {
     filePic: string
@@ -18,7 +19,7 @@ export function Project({ filePic, title, description, projectLink }: ProjectPro
                 </div>
 
                 <a href={projectLink} target="_blank" className="bg-transparent border border-[#6A80B9] text-[#6A80B9] flex flex-col justify-center h-12 my-auto align-middle px-7 rounded-b-3xl rounded-l-3xl hover:text-white font-bold hover:bg-[#6A80B9] duration-700">
-                    Acesse aqui
+                    {`${i18n.t('projects.button')}`}
                 </a>
             </div>
 
