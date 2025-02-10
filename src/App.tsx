@@ -83,8 +83,6 @@ export function App() {
             <TimelineElement representation="GraduationCap" title={`${i18n.t('experience.bachelor')}`} date="2024 - 2028" place={`${i18n.t('experience.place.ufabc')}`} />
             <TimelineElement representation="LaptopMinimal" title={`${i18n.t('experience.internship')}`} date="2024 - Atualmente" place={`${i18n.t('experience.place.cityHall')}`} />
           </div>
-
-
         </div>
       </div>
     </div>
