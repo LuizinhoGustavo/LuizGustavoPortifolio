@@ -6,6 +6,10 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .bg-dotted-pattern {
     /*Pontilhado na tela*/
     background-image: radial-gradient(circle, #00000040 1px, transparent 1px);

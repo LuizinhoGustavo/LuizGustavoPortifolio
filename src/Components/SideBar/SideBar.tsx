@@ -15,7 +15,7 @@ export function SideBar() {
             <aside
                 className={`h-full w-16 fixed md:w-32 flex flex-col gap-10 justify-center items-center bg-white left-0 border-2 border-gray-300 shadow-lg shadow-indigo-500/50 transition-transform duration-500 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
             >
-                <div className="text-center hover:text-orange-600 duration-500"><a href="#"><House size={37} /></a></div>
+                <div className="text-center hover:text-orange-600 duration-500"><a href="#home"><House size={37} /></a></div>
                 <div className="text-center hover:text-orange-600 duration-500"><a href="#"><SquareUser size={37} /></a></div>
                 <div className="text-center hover:text-orange-600 duration-500"><a href="#"><FolderKanban size={37} /></a></div>
                 <div className="text-center hover:text-orange-600 duration-500"><a href="#"><FileJson2 size={37} /></a></div>
