@@ -39,12 +39,17 @@ export function App() {
 
           <AboutMe />*/}
 
-          <Title content="Projetos" color="#6A80B950" size="40" />
-
           {/* Projetos */}
+          <span id="projects" className=" mb-10 " />
+
+          <Title content="Projetos" color="#6A80B950" size="42" />
+
           <div className="mx-3 grid gap-10 grid-cols-1 lg:grid-cols-2 mb-32">
             <Project title="Random Gutenberg Book" description="Um projeto que utiliza a API de livros da biblioteca de Gutenberg" projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
+
           </div>
+
+          <span id="technologies" className=" mb-10 " />
 
           <Title content="Tecnologias" color="#B96A6B50" size="52" />
 
@@ -66,11 +71,13 @@ export function App() {
             </div>
           </div>
 
+          <span id="experiences" className=" mb-10 " />
+
           <Title content="Experiência" color="#DB4EA350" size="52" />
 
           <div className="flex flex-col gap-2 w-2/3 pb-32 mx-auto">
             <TimelineElement representation="Earth" title="Inglês Avançado - (C1)" date="2014 - 2024" place="Cultura Inglesa" />
-            <TimelineElement representation="GraduationCap" title="Técnico em Desenvolvimento de Sistemas" date="2021 - 2023" place="ETEC Lauro Gomes" />
+            <TimelineElement representation="GraduationCap" title="Curso Técnico em Desenvolvimento de Sistemas" date="2021 - 2023" place="ETEC Lauro Gomes" />
             <TimelineElement representation="GraduationCap" title="Bacharel em Ciência e Tecnologia / Ciência da Computação" date="2024 - 2028" place="UFABC" />
             <TimelineElement representation="LaptopMinimal" title="Estágio em Desenvolvimento Front-End" date="2024 - Atualmente" place="Prefeitura de Santo André" />
           </div>
