@@ -1,4 +1,4 @@
-import { FileUser, Github, Linkedin } from "lucide-react";
+import { ChartColumn, FileUser, Github, LaptopIcon, Linkedin, Pencil } from "lucide-react";
 import { SideBar } from "./Components/SideBar/SideBar";
 import { Title } from "./Components/Title/Title"
 import "./index.css"
@@ -37,14 +37,14 @@ export function App() {
         </div>
 
         <div className="flex flex-col gap-10 justify-start mx-auto w-full max-w-[850px]">
-          {/*<Title content="Experiência" color="#00FF4D50" size="52" />
+          {/* <Title content="Sobre Mim" />
 
-          <AboutMe />*/}
+          <AboutMe /> */}
 
           {/* Projetos */}
           <span id="projects" className=" mb-10 " />
 
-          <Title content={`${i18n.t('subtitles.projects')}`} color="#6A80B950" size="42" />
+          <Title content={`${i18n.t('subtitles.projects')}`} />
 
           <div className="mx-3 grid gap-10 grid-cols-1 lg:grid-cols-2 mb-32">
             <Project title={`${i18n.t('projects.randomGutenbergBook.title')}`} description={`${i18n.t('projects.randomGutenbergBook.description')}`} projectLink="https://randomgutenbergbook.vercel.app/" filePic={FilePic} />
@@ -53,21 +53,24 @@ export function App() {
 
           <span id="technologies" className=" mb-10 " />
 
-          <Title content={`${i18n.t('subtitles.tecnhologies')}`} color="#B96A6B50" size="56" />
+          <Title content={`${i18n.t('subtitles.tecnhologies')}`} />
 
           <Tecnhologies />
 
           <div className="flex flex-col gap-10 w-full py-14">
-            <Title content={`${i18n.t('subtitles.whatIDo')}`} color="#EEFF0050" size="64" />
+            <Title content={`${i18n.t('subtitles.whatIDo')}`} />
 
-            <div className="flex justify-center gap-12 flex-wrap w-[90%] pb-16">
-              <div className="bg-[#DB6B6B50] h-72 w-52 border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
+            <div className="flex justify-center mx-auto gap-12 flex-wrap w-[90%] pb-16">
+              <div className="bg-[#DB6B6B50] h-72 w-52 flex flex-col justify-center border-2 border-[#DB6B6B] rounded-2xl -rotate-[10deg] p-3">
+                <LaptopIcon />
                 <span className="font-bold text-[1.4rem]">{`${i18n.t('whatIDo.frontend')}`} </span>
               </div>
-              <div className="bg-[#88FFA250] h-72 w-52 border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
+              <div className="bg-[#88FFA250] h-72 w-52 flex flex-col justify-center border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
+                <Pencil />
                 <span className="font-bold text-[1.4rem]">{`${i18n.t('whatIDo.frontend')}`}</span>
               </div>
-              <div className="bg-[#9E88FF50] h-72 w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
+              <div className="bg-[#9E88FF50] h-72 flex flex-col justify-center w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
+                <ChartColumn />
                 <span className="font-bold text-[1.4rem]">{`${i18n.t('whatIDo.office')}`}</span>
               </div>
             </div>
@@ -75,7 +78,7 @@ export function App() {
 
           <span id="experiences" className=" mb-10 " />
 
-          <Title content={`${i18n.t('subtitles.experience')}`} color="#DB4EA350" size="52" />
+          <Title content={`${i18n.t('subtitles.experience')}`} />
 
           <div className="flex flex-col gap-2 w-2/3 pb-32 mx-auto">
             <TimelineElement representation="Earth" title={`${i18n.t('experience.english')}`} date="2014 - 2024" place={`${i18n.t('experience.place.culture')}`} />
