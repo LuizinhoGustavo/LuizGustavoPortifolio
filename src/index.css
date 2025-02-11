@@ -4,15 +4,17 @@
 
 * {
     font-family: 'Nunito', sans-serif;
+    transition: 200ms;
 }
 
 body {
     scroll-behavior: smooth;
+    background-color: var(--background);
 }
 
 .bg-dotted-pattern {
     /*Pontilhado na tela*/
-    background-image: radial-gradient(circle, #00000040 1px, transparent 1px);
+    background-image: radial-gradient(circle, var(--dots) 1px, transparent 1px);
     background-size: 20px 20px;
 }
 
@@ -32,4 +34,26 @@ body {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+/*Variáveis*/
+
+:root {
+    --background: #F8F8F8;
+    --dots: #00000040;
+    --blue: #6A80B9;
+    --orange: #FD6F00;
+    --gray: #E5E5E5;
+    --icons: #121214;
+    --text: #121214;
+}
+
+[data-theme='dark'] {
+    --background: #191919;
+    --dots: #ffffff20;
+    --blue: #6A80B9;
+    --orange: #FD6F00;
+    --gray: #141414;
+    --icons: #FFFFFF;
+    --text: #FFFFFF;
 }

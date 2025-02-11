@@ -8,7 +8,16 @@ export default {
     extend: {
       fontFamily: {
         'Nunito': ['Nunito', 'sans-serif']
-      }
+      },
+      colors: {
+        backgroundColor: 'var(--background)',
+        blueColorColor: 'var(--blue)',
+        orangeColor: 'var(--orange)',
+        grayColor: 'var(--gray)',
+        blackColor: 'var(--black)',
+        iconsColor: 'var(--icons)',
+        textColor: 'var(--text)',
+      },
     },
   },
   plugins: [],

@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { House, SquareUser, FolderKanban, FileJson2, BriefcaseBusiness, PanelRightOpen, PanelRightClose } from 'lucide-react'
-import usa from "../../assets/pictures/usa_flag.png"
-import brazil from "../../assets/pictures/brazil_flag.png"
 
 export function SideBar() {
     const [isOpen, setIsOpen] = useState(true);
@@ -11,34 +9,17 @@ export function SideBar() {
         setIsOpen(prevState => !prevState);
     };
 
-    function handleLanguage(event: React.MouseEvent<HTMLButtonElement>) {
-        const value = (event.target as HTMLButtonElement).value;
-        window.localStorage.setItem('i18nextLng', value);
-
-        window.location.reload();
-    }
-
     return (
         <div className="flex">
 
-            <aside className={`h-full w-16 fixed md:w-32 flex flex-col gap-10 justify-center items-center bg-white left-0 border-2 border-gray-300 shadow-lg 
-            shadow-indigo-500/50 transition-transform duration-500 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+            <aside className={`h-full w-16 fixed md:w-32 flex flex-col gap-10 justify-center items-center bg-backgroundColor left-0 border-r-grayColor border-2 border-backgroundColor  shadow-lg 
+             transition-transform duration-500 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
 
-                <div className="text-center hover:text-orange-600 duration-500"><Link to="home" smooth={true} duration={400}><House size={37} /></Link></div>
-                {/* {<div className="text-center hover:text-orange-600 duration-500"><Link to="projects" smooth={true} duration={500}><SquareUser size={37} /></Link></div>} */}
-                <div className="text-center hover:text-orange-600 duration-500"><Link to="projects" smooth={true} duration={500}><FolderKanban size={37} /></Link></div>
-                <div className="text-center hover:text-orange-600 duration-500"><Link to="technologies" smooth={true} duration={500}><FileJson2 size={37} /></Link></div>
-                <div className="text-center hover:text-orange-600 duration-500"><Link to="experiences" smooth={true} duration={500}><BriefcaseBusiness size={37} /></Link></div>
-
-                {
-
-                    window.localStorage.getItem('i18nextLng') === 'pt-BR' ?
-                        <button value="" onClick={handleLanguage} className='bg-transparent text-sm flex items-center gap-1'> <img src={usa} alt="Bandeira Estados Unidos" />English</button>
-                        :
-                        <button value="pt-BR" onClick={handleLanguage} className='bg-transparent text-sm flex items-center gap-1'> <img src={brazil} alt="Bandeira Brasil" />Português</button>
-                }
-
-
+                <div className="text-center text-iconsColor hover:text-orangeColor duration-500"><Link to="home" smooth={true} duration={400}><House size={37} /></Link></div>
+                {/* {<div className="text-center text-iconsColor hover:text-orangeColor duration-500"><Link to="projects" smooth={true} duration={500}><SquareUser size={37} /></Link></div>} */}
+                <div className="text-center text-iconsColor hover:text-orangeColor duration-500"><Link to="projects" smooth={true} duration={500}><FolderKanban size={37} /></Link></div>
+                <div className="text-center text-iconsColor hover:text-orangeColor duration-500"><Link to="technologies" smooth={true} duration={500}><FileJson2 size={37} /></Link></div>
+                <div className="text-center text-iconsColor hover:text-orangeColor duration-500"><Link to="experiences" smooth={true} duration={500}><BriefcaseBusiness size={37} /></Link></div>
 
             </aside >
 

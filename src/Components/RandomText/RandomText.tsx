@@ -14,6 +14,6 @@ export function RandomText() {
     }
 
     return (
-        <p className="font-semibold text-md md:text-xl">{menssage}</p>
+        <p className="font-semibold text-textColor text-md md:text-xl">{menssage}</p>
     )
 }
