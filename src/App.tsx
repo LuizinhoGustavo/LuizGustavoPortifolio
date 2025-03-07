@@ -28,7 +28,7 @@ export function App() {
   return (
     <div className="flex flex-row bg-dotted-pattern justify-center">
 
-      <div className="fixed flex items-center gap-3 top-4 right-4 z-50">
+      <div className="absolute flex items-center gap-3 top-4 right-4 z-50">
         <ThemeToggle />
 
         {
@@ -41,11 +41,9 @@ export function App() {
 
       {/* Conteúdos em  Div's para corrigir a sobreposição do conteúdo na Side Bar*/}
 
-      <div className="w-42">
-        <SideBar />
-      </div>
+      <SideBar />
 
-      <div id="home" className="flex flex-col w-full">
+      <div id="home" className="flex flex-col w-full -translate-x-1/5">
         <div className="h-screen flex mx-auto flex-col gap-2 items-center justify-center max-w-[1200px]">
           <h1 className="font-bold text-textColor text-2xl md:text-5xl"><ReactTyped strings={['Luiz Gustavo', i18n.t('title.dev')]} typeSpeed={200} backSpeed={30} loop />
           </h1>
