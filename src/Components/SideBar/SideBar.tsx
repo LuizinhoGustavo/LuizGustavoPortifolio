@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { House, FolderKanban, FileJson2, BriefcaseBusiness, PanelRightOpen, PanelRightClose } from 'lucide-react'
+import { House, FolderKanban, FileJson2, BriefcaseBusiness, PanelRightOpen, PanelRightClose, SquareUser,  } from 'lucide-react'
 
 export function SideBar() {
     const [isOpen, setIsOpen] = useState(true);
@@ -16,6 +16,9 @@ export function SideBar() {
                 
                 <div className="text-center text-iconsColor hover:text-orangeColor duration-300">
                     <Link to="home" smooth={true} duration={400}><House size={37} /></Link>
+                </div>
+                <div className="text-center text-iconsColor hover:text-orangeColor duration-300">
+                    <Link to="aboutMe" smooth={true} duration={500}><SquareUser size={37} /></Link>
                 </div>
                 <div className="text-center text-iconsColor hover:text-orangeColor duration-300">
                     <Link to="projects" smooth={true} duration={500}><FolderKanban size={37} /></Link>

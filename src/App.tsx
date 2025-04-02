@@ -7,6 +7,7 @@ import { ReactTyped } from "react-typed";
 import { Project } from "./Components/Project/Project";
 import { Tecnhologies } from "./Components/Technologies/Technologies";
 
+import curriculum from './assets/Curriculo_LuizGustavo.pdf'
 import FilePic from '../src/assets/pictures/filePIc.png'
 import { TimelineElement } from "./Components/TimelineElement/TimelineElement";
 import { RandomText } from "./Components/RandomText/RandomText";
@@ -15,6 +16,7 @@ import { i18n } from "./translate/i18n";
 import usa from "../src/assets/pictures/usa_flag.png"
 import brazil from "../src/assets/pictures/brazil_flag.png"
 import { ThemeToggle } from '../src/Components/ThemeToggle/ThemeToggle';
+import { AboutMe } from "./Components/AboutMe/AboutMe";
 
 export function App() {
 
@@ -52,14 +54,17 @@ export function App() {
           <div className="flex w-full flex-row justify-center gap-14">
             <a href="https://www.linkedin.com/in/luiz-gustavo-silva-49b71725a/" target="_blank"><Linkedin size={40} strokeWidth={1.7} className="text-iconsColor hover:text-orange-600  duration-500" /></a>
             <a href="https://github.com/LuizinhoGustavo" target="_blank"><Github size={40} strokeWidth={1.7} className="text-iconsColor hover:text-orange-600 duration-500" /></a>
-            <a href="" target="_blank"><FileUser size={40} strokeWidth={1.7} className="text-iconsColor hover:text-orange-600 duration-500" /></a>
+            <a href={curriculum} target="_blank"><FileUser size={40} strokeWidth={1.7} className="text-iconsColor hover:text-orange-600 duration-500" /></a>
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 justify-start mx-auto w-full max-w-[850px]">
-          {/* <Title content="Sobre Mim" />
+        {/* Sobre Mim */}
+        <span id="aboutMe" className=" mb-10 " />
 
-          <AboutMe /> */}
+        <div className="flex flex-col gap-10 justify-start mx-auto w-full max-w-[850px]">
+          /* <Title content="Sobre Mim" />
+
+          <AboutMe /> */
 
           {/* Projetos */}
           <span id="projects" className=" mb-10 " />
