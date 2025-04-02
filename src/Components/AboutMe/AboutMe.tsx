@@ -15,7 +15,7 @@ export function AboutMe() {
                 <p>{`${i18n.t('aboutMe.p3Text')}`}</p>
             </div>
 
-            <a href={curriculum} target="_blank" className="bg-transparent border border-orangeColor text-orangeColor flex flex-col justify-center h-12 my-auto align-middle px-7 rounded-b-3xl rounded-l-3xl hover:text-white font-bold hover:bg-orangeColor duration-700">
+            <a href={curriculum} target="_blank" className="w-44 bg-transparent border border-orangeColor text-orangeColor flex flex-col justify-center h-12 my-auto align-middle px-7 rounded-b-3xl rounded-l-3xl hover:text-white font-bold hover:bg-orangeColor duration-700">
                     {`${i18n.t('aboutMe.btnCV')}`}
                 </a>
             </div>
