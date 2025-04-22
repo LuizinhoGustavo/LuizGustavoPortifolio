@@ -62,9 +62,9 @@ export function App() {
         <span id="aboutMe" className=" mb-10 " />
 
         <div className="flex flex-col gap-10 justify-start mx-auto w-full max-w-[850px]">
-          /* <Title content="Sobre Mim" />
+          <Title content={`${i18n.t('aboutMe.AboutMe')}`}/>
 
-          <AboutMe /> */
+          <AboutMe />
 
           {/* Projetos */}
           <span id="projects" className=" mb-10 " />
@@ -92,7 +92,7 @@ export function App() {
               </div>
               <div className="bg-[#88FFA250] h-72 w-52 flex flex-col justify-center border-2 border-[#88FFA2] rounded-2xl rotate-[12deg] p-3">
                 <Pencil className="text-iconsColor" />
-                <span className="font-bold text-textColor text-[1.4rem]">{`${i18n.t('whatIDo.frontend')}`}</span>
+                <span className="font-bold text-textColor text-[1.4rem]">{`${i18n.t('whatIDo.backend')}`}</span>
               </div>
               <div className="bg-[#9E88FF50] h-72 flex flex-col justify-center w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
                 <ChartColumn className="text-iconsColor" />

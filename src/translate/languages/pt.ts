@@ -12,6 +12,7 @@ const messages = {
                 experience: "Experiência",
             },
             aboutMe: {
+                AboutMe: "Sobre Mim",
                 p1Text: "Olá, me chamo Luiz Gustavo e sou apaixonado em criar coisas e isso vem desde de criança, quando vi que posso realizar isso todos os dias com programação decidi que era exatamente isso que queria fazer.",
                 p2Text: "Comecei a estudar programação no ensino médio quando ingressei no curso técnico de Desenvolvimento de Sistemas, após isso fui me desenvolvendo e aprendendo cada vez mais, até ingressar na Faculdade federal do ABC nos Bacherelados de Ciência e Tecnologia e Ciência da Computação.",
                 p3Text: "Desejo me especializar na área de Visão Computacional, mas nunca abandonar o que me fez ingressar na programação que é o desenvolvimento de aplicações como sites e softwares.",
