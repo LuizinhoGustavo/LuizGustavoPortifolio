@@ -1,5 +1,5 @@
 import {
-  ChartColumn,
+  Code,
   FileUser,
   Github,
   LaptopIcon,
@@ -145,8 +145,8 @@ export function App() {
                 <span className="font-bold text-textColor text-[1.4rem]">{`${i18n.t('whatIDo.backend')}`}</span>
               </div>
               <div className="bg-[#9E88FF50] h-72 flex flex-col justify-center w-52 border-2 border-[#9E88FF] rounded-2xl -rotate-[8deg] p-3">
-                <ChartColumn className="text-iconsColor" />
-                <span className="font-bold text-textColor text-[1.4rem]">{`${i18n.t('whatIDo.office')}`}</span>
+                <Code className="text-iconsColor" />
+                <span className="font-bold text-textColor text-[1.4rem]">{`${i18n.t('whatIDo.code')}`}</span>
               </div>
             </div>
           </div>

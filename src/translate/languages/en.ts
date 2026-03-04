@@ -45,7 +45,7 @@ const messages = {
       whatIDo: {
         frontend: 'Frontend Development',
         backend: 'Backend Development',
-        office: 'Office Package and Power BI',
+        code: 'Code Review',
       },
     },
   },
